@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubes 2048 - Arena</title>
+    
+    <link rel="icon" type="image/png" href="favicon.png?v=1">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="overlay">
+        <div class="menu-content">
+            <div id="death-text">GAME OVER</div>
+            
+            <h1 style="color: #888; margin: 0; font-size: 24px;">BEST SCORE</h1>
+            <div class="high-score-display" id="bestScore">0</div>
+            
+            <input type="text" id="nickname" placeholder="YOUR NAME" maxlength="10">
+            <br>
+            <button onclick="startGame()">PLAY</button>
+        </div>
+    </div>
+
+    <div id="leaderboard">
+        <h3 style="margin:0 0 10px 0; border-bottom: 1px solid #555; text-align: center;">TOP 10</h3>
+        <div id="lb-list"></div>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
